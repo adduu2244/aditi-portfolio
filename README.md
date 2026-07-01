@@ -4,7 +4,7 @@ A modern, responsive developer portfolio showcasing my projects, technical skill
 
  🚀 Live Demo
 
-🔗 https://adduu2244.github.io/aditi-portfolio/
+🔗 https://adduu2244.github.io/aditi-portfolio/ 
 
 ✨ Features
 - Modern and responsive UI
