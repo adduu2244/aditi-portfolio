@@ -4,7 +4,7 @@ A modern, responsive developer portfolio showcasing my projects, technical skill
 
  🚀 Live Demo
 
-🔗 https://YOUR-PORTFOLIO-LINK
+🔗 https://adduu2244.github.io/aditi-portfolio/
 
 ✨ Features
 - Modern and responsive UI
@@ -42,7 +42,7 @@ A modern task management application with Local Storage support and responsive d
 
 💻 GitHub: https://github.com/adduu2244
 
-🌐 Portfolio: (Portfolio Link)
+🌐 Portfolio: https://adduu2244.github.io/aditi-portfolio/
 
 ---
 
