@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditi | Portfolio</title>
+    <!-- Google Fonts for crisp typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for fallback icons if needed, or use your custom SVGs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+    
+    <div id="progressBar"></div>
+    <!-- Background Glow Blobs -->
+    <div class="glow-blob blob-1"></div>
+    <div class="glow-blob blob-2"></div>
+
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Aditi<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="assets/resume.pdf" class="btn btn-resume" download>Resume</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Main Content Grid (Matches Desktop Split Layout) -->
+        <div class="portfolio-grid">
+            
+            <!-- LEFT COLUMN: Hero & Projects -->
+            <div class="left-column">
+                <!-- Hero Section -->
+                <section id="home" class="hero-section">
+                    <div class="hero-content">
+                       <h1>
+                          Hi, I'm <br>
+                           <span class="highlight">Aditi Deepak Ghadigaonkar</span>
+                     </h1>
+
+                   <h2 class="hero-role">
+                        Web Developer
+                    </h2>
+                    <p class="hero-subtitle">
+                       Passionate about building clean, responsive, and user-friendly web applications while continuously learning modern web technologies and strengthening my problem-solving skills.
+                         </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">View Projects</a>
+                            <a href="assets/resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+                        </div>
+                    </div>
+                    <div class="hero-image-container">
+                        <img src="assets/images/hero-laptop.png" alt="Laptop illustration" class="hero-laptop">
+                    </div>
+                </section>
+
+                <!-- Featured Projects Section -->
+                <section id="projects" class="projects-section">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="projects-grid">
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <div class="project-img-wrapper">
+                                <img src="assets/images/project1.png" alt="PawMart UI">
+                            </div>
+                            <div class="project-info">
+                                <h3>PawMart</h3>
+                                <p>A modern pet care e-commerce platform offering pet products,
+                                    veterinary services, and a seamless shopping experience.</p>
+
+                                <div class="project-tags">
+                                    <span class="tag tag-react">React</span>
+                                    <span class="tag tag-node">Node</span>
+                                    <span class="tag tag-mongo">MongoDB</span>
+                                </div>
+                                <div class="project-links">
+                                   <a href="#" class="btn btn-sm btn-primary disabled">Coming Soon</a>
+                                   <a href="https://github.com/adduu2244/PawMart" target="_blank" class="btn btn-sm btn-secondary">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="project-card">
+                            <div class="project-img-wrapper">
+                                <img src="assets/images/project2.png" alt="KisanSetu UI">
+                            </div>
+                            <div class="project-info">
+                                <h3>KisanSetu</h3>
+                                <p>  A smart agriculture platform that helps farmers manage products, market information, and digital farming services.</p>
+                                <div class="project-tags">
+                                    <span class="tag tag-react">Python Flask</span>
+                                    <span class="tag tag-node">Node</span>
+                                    <span class="tag tag-mongo">MongoDB</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-sm btn-primary disabled">Coming Soon</a>
+                                    <a href="https://github.com/adduu2244/KisanSetu.git" target="_blank" class="btn btn-sm btn-secondary">GitHub</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                    <!--Project 3-->
+                    <div class="project-card">
+    <div class="project-img-wrapper">
+        <img src="assets/images/project3 (2).png" alt="TaskFlow UI">
+    </div>
+
+    <div class="project-info">
+        <h3>TaskFlow</h3>
+        <p>
+            A modern task management web application with Local Storage,
+            responsive design, and an intuitive user experience.
+        </p>
+
+        <div class="project-tags">
+            <span class="tag tag-react">HTML5</span>
+            <span class="tag tag-node">CSS3</span>
+            <span class="tag tag-mongo">JavaScript</span>
+        </div>
+
+        <div class="project-links">
+            <a href="https://adduu2244.github.io/TaskFlow/" target="_blank" class="btn btn-sm btn-primary">
+                            Live Demo
+            </a>
+            <a href="https://github.com/adduu2244/TaskFlow" target="_blank" class="btn btn-sm btn-secondary">
+                             GitHub
+            </a>
+        </div>
+    </div>
+</div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- RIGHT COLUMN: About, Stats, Skills, Experience, Contact -->
+            <div class="right-column">
+                <!-- About Me Card -->
+                <section id="about" class="glass-card about-card">
+                    <h2 class="card-title">About Me</h2>
+                    <div class="about-profile">
+                        <div class="profile-img-wrapper">
+                            <img src="assets/images/profile.png" alt="Aditi Ghadi">
+                        </div>
+                    <p class="about-text">
+                      I'm Aditi Deepak Ghadigaonkar, a Web Developer with a strong interest in creating modern, responsive, and user-friendly websites.
+                      I enjoy transforming ideas into interactive web experiences using HTML, CSS, JavaScript, and React while continuously improving my frontend development skills.
+                     Currently, I'm expanding my knowledge in software development, backend technologies, and problem-solving to become a well-rounded Software Engineer.
+                      </p>
+                    </div>
+
+                    <div class="stats-section">
+                        <h4>>Quick Stats</h4>
+                        <div class="stats-grid">
+                            <div class="stat-box">
+                                <span class="stat-num">5+</span>
+                                <span class="stat-label">Projects Built</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-num">10+</span>
+                                <span class="stat-label">Technologies</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-num">∞</span>
+                                <span class="stat-label">Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills Card -->
+               <section id="skills" class="glass-card skills-card">
+
+                 <h2 class="card-title">Skills</h2>
+
+                 <h4 class="skills-heading">Core Skills</h4>
+
+                 <div class="skills-grid">
+
+                  <div class="skill-item">
+                     <i class="devicon-html5-plain colored" alt="HTML"></i>
+                     <span>HTML5</span>
+                 </div>
+
+                <div class="skill-item">
+                    <i class="devicon-css3-plain colored" alt="CSS"></i>
+                    <span>CSS3</span>
+                 </div>
+
+        <div class="skill-item">
+                   <i class="devicon-javascript-plain colored" alt="JavaScript"></i>
+            <span>JavaScript</span>
+        </div>
+
+        <div class="skill-item">
+             <i class="devicon-react-original colored" alt="React"></i>
+            <span>React</span>
+        </div>
+
+        <div class="skill-item">
+              <i class="devicon-python-plain colored" alt="Python"></i>
+            <span>Python</span>
+        </div>
+
+        <div class="skill-item">
+           <i class="devicon-git-plain colored" alt="Git"></i>
+            <span>Git</span>
+        </div>
+
+        <div class="skill-item">
+            <i class="devicon-github-original" alt="GitHub"></i>
+            <span>GitHub</span>
+        </div>
+
+    </div>
+    <h3>Currently Learning</h3>
+
+<div class="learning-grid">
+
+    <div class="learning-card">
+        <i class="devicon-nodejs-plain colored"></i>
+        <span>Node.js</span>
+    </div>
+
+    <div class="learning-card">
+        <i class="devicon-express-original"></i>
+        <span>Express.js</span>
+    </div>
+
+    <div class="learning-card">
+        <i class="devicon-mongodb-plain colored"></i>
+        <span>MongoDB</span>
+    </div>
+
+</div>
+</section>
+
+                <!-- Experience Card -->
+                <section id="experience" class="glass-card experience-card">
+
+    <h2 class="card-title">Experience</h2>
+
+    <div class="experience-block">
+
+        <!-- Internship -->
+        <div class="experience-item">
+            <h3>Web Development Intern</h3>
+            <span class="company">SAM AI Technologies</span>
+            <span class="duration">Present</span>
+        </div>
+
+        <hr>
+
+        <!-- Hackathons -->
+        <div class="experience-item">
+            <h3>Hackathons</h3>
+
+            <div class="achievement">
+                ✓ NIRMAN Hackathon
+            </div>
+
+            <div class="achievement">
+                ✓ National Level Project Competition
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Learning -->
+        <div class="experience-item">
+            <h3>Learning Journey</h3>
+
+            <div class="learning-item">
+                <span class="year">2026</span>
+
+                <span class="journey">
+                    Started Web Development
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+                <!-- Contact Card -->
+                <section id="contact" class="glass-card contact-card">
+                    <div class="contact-layout">
+                        <div class="contact-left">
+                            <h2 class="contact-heading">Let's Build Something Amazing Together.</h2>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-figma"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-telegram"></i></a>
+                            </div>
+                        </div>
+                        <div class="contact-right">
+                            <form class="contact-form">
+                                <input type="text" placeholder="Name" required>
+                                <input type="email" placeholder="Email" required>
+                                <textarea placeholder="Message" rows="4" required></textarea>
+                                <button type="submit" class="btn btn-primary btn-block">Send <i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Designed & Developed by <strong>Aditi Ghadi</strong> &copy; 2026</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
