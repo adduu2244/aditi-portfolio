@@ -537,15 +537,10 @@ header {
 /* ==========================================
    FOOTER
    ========================================== */
-footer {
-    text-align: center;
-    padding: 40px 0;
-    font-size: 13px;
-    color: var(--text-secondary);
-    border-top: 1px solid var(--border-color);
-    margin-top: 50px;
-}
-
+.contact-card{
+    width:100%;
+    margin:40px auto;
+} 
 /* Scroll Reveal */
 
 .hidden{
@@ -719,4 +714,43 @@ transform:translateY(0);
     opacity:0.6;
     cursor:not-allowed;
     pointer-events:none;
+}
+#toast{
+    position:fixed;
+    top:30px;
+    right:30px;
+
+    background:#6C63FF;
+
+    color:white;
+
+    padding:16px 25px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    opacity:0;
+
+    transform:translateY(-30px);
+
+    transition:.4s;
+
+    z-index:9999;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+}
+
+#toast.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+#toast.error{
+
+    background:#ff4d4d;
+
 }

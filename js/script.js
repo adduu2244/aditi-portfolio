@@ -1,6 +1,4 @@
-// ===============================
-// Smooth Scroll
-// ===============================
+
 
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', function(e){
@@ -190,45 +188,6 @@ this.appendChild(circle);
 // Contact Form
 // ===============================
 
-const form=document.querySelector(".contact-form");
-
-if(form){
-
-form.addEventListener("submit",(e)=>{
-
-e.preventDefault();
-
-const inputs=form.querySelectorAll("input,textarea");
-
-let valid=true;
-
-inputs.forEach(input=>{
-
-if(input.value.trim()===""){
-
-input.style.borderColor="#ff4d4f";
-
-valid=false;
-
-}else{
-
-input.style.borderColor="#4F46E5";
-
-}
-
-});
-
-if(valid){
-
-alert("Message Sent Successfully 🚀");
-
-form.reset();
-
-}
-
-});
-
-}
 
 // Scroll Progress
 
@@ -243,3 +202,85 @@ const progressWidth=(window.pageYOffset/total)*100;
 progress.style.width=progressWidth+"%";
 
 });
+
+const contactForm = document.getElementById("contact-form");
+const sendBtn = document.getElementById("send-btn");
+
+contactForm.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    sendBtn.innerHTML = "Sending...";
+    sendBtn.disabled = true;
+    console.log("Name:", contactForm.from_name.value);
+    console.log("Email:", contactForm.from_email.value);
+    console.log("Message:", contactForm.message.value);
+
+
+   const templateParams = {
+    from_name: contactForm.from_name.value,
+    from_email: contactForm.from_email.value,
+    message: contactForm.message.value
+};
+
+console.log(templateParams);
+
+emailjs.send(
+    "service_47y0qsj",
+    "template_yfgmjoy",
+    templateParams
+)
+
+    .then(function (response) {
+
+    console.log("SUCCESS!", response);
+
+    showToast("Message Sent Successfully!");
+
+    contactForm.reset();
+
+    sendBtn.innerHTML = 'Send <i class="fas fa-paper-plane"></i>';
+
+    sendBtn.disabled = false;
+
+})
+
+.catch(function (error) {
+
+    console.log("FAILED...", error);
+
+    alert(JSON.stringify(error));
+
+    showToast("Failed to Send Message!", true);
+
+    sendBtn.innerHTML = 'Send <i class="fas fa-paper-plane"></i>';
+
+    sendBtn.disabled = false;
+
+});
+
+});
+
+function showToast(message, error = false){
+
+    const toast = document.getElementById("toast");
+
+    toast.innerText = message;
+
+    toast.className = "";
+
+    if(error){
+
+        toast.classList.add("error");
+
+    }
+
+    toast.classList.add("show");
+
+    setTimeout(()=>{
+
+        toast.classList.remove("show");
+
+    },3000);
+
+}
